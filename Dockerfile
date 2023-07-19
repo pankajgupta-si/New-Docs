@@ -5,7 +5,7 @@ RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/instal
 RUN (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/arch/.profile
 RUN  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-RUN brew install gcc -y
+#RUN brew install gcc -y
 RUN brew update && brew install ruby
 
 RUN python --version
